@@ -1,7 +1,8 @@
 import { Button, Container } from "@mui/material";
 import { useState } from "react";
-
+import { useNavigate } from "react-router-dom";
 const Upload = () => {
+    const navigate = useNavigate();
   const [selectedImage, setSelectedImage] = useState();
   const [image, setimage] = useState(() => {
     // getting stored value
@@ -17,11 +18,13 @@ const Upload = () => {
         localStorage["profile"] = base64;
         console.debug("file stored",base64);
       });
+     
     }
   };
 
-  // This function will be triggered when the "Remove This Image" button is clicked
+  // This function will be triggered when the "Update This Image" button is clicked
   const updateSelectedImage = () => {
+    navigate("/")
     imageChange()
   };
   const getBase64 = (file) => {
