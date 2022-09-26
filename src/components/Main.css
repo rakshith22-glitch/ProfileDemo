@@ -1,0 +1,55 @@
+.wrapper {
+    position:relative;
+  }
+  
+  .icon {
+    position: relative;
+    box-sizing:border-box;
+    margin-left: -30px;
+    margin-top: 15px;
+  }
+  
+  .input{
+    width: 350px;
+  }
+
+
+  .css-1x51dt5-MuiInputBase-input-MuiInput-input {
+    cursor: pointer;
+}
+
+
+.css-1u3bzj6-MuiFormControl-root-MuiTextField-root{
+    cursor: pointer;
+}
+
+.css-i4bv87-MuiSvgIcon-root {
+    cursor: pointer;
+}
+
+.pushable {
+    background: rgb(29, 27, 28);
+    border-radius: 12px;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    text-align: center;
+    display: block;
+    outline-offset: 4px;
+    width: 100%;
+   
+  }
+  .front {
+    display: block;
+    padding: 12px 42px;
+    border-radius: 12px;
+    font-size: 1.25rem;
+    background: rgb(19, 19, 19);
+    color: white;
+    transform: translateY(-6px);
+  
+  }
+
+  .pushable:active .front {
+    transform: translateY(-2px);
+  }
